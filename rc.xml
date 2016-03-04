@@ -432,7 +432,7 @@ cases. -->
     </keybind>
     <keybind key="C-Print">
       <action name="Execute">
-        <command>gnome-screenshot -a -f</command>
+        <command>gnome-screenshot -a</command>
       </action>
     </keybind>
     <keybind key="A-F4">
