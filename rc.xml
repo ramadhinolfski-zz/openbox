@@ -40,7 +40,7 @@ following: 'Mouse' - where the mouse is, or
 'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>equinox</name>
+    <name>Numix</name>
     <titleLayout>CMIL</titleLayout>
     <!--
 available characters are NDSLIMC, each can occur at most once.
@@ -409,17 +409,17 @@ cases. -->
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer set Master 5%+ unmute</command>
+        <command>amixer -c 1 set Master 3+</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer set Master 5%- unmute</command>
+        <command>amixer -c 1 set Master 3-</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>amixer set Master toggle</command>
+        <command>amixer -c 1 set Master toggle</command>
       </action>
     </keybind>
     <keybind key="XF86ScreenSaver">
