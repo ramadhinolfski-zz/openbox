@@ -14,7 +14,7 @@
 # Networking system tray applet
 (sleep 3 && nm-applet) &
 
-(sleep 3 && ibus --xim) &
+(sleep 3 && ibus-daemon --xim) &
 
 (sleep 3 && uget-gtk) &
 

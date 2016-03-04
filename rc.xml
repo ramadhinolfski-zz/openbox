@@ -175,11 +175,6 @@ cases. -->
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="XF86PowerOff">
-      <action name="Execute">
-        <command>systemctl poweroff</command>
-      </action>
-    </keybind>
     <!-- <aero snap addition> -->
     <keybind key="W-S-Left">
       <action name="UnmaximizeFull"/>
@@ -278,10 +273,7 @@ cases. -->
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
-    <keybind key="A-F4">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="A-F3">
+    <keybind key="W-r">
       <action name="Execute">
         <command>~/.config/dmenu/dmenu-bind.sh</command>
         <startupnotify>
@@ -312,6 +304,7 @@ cases. -->
         <desktop>yes</desktop>
       </action>
     </keybind>
+<!-- Browser -->
     <keybind key="W-w">
       <action name="Execute">
         <command>google-chrome-stable</command>
@@ -321,6 +314,17 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
+<!-- Multimedia -->
+    <keybind key="W-i">
+      <action name="Execute">
+        <command>inkscape</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>Inkscape</name>
+        </startupnotify>
+      </action>
+    </keybind>
+<!-- Terminal -->
     <keybind key="W-t">
       <action name="Execute">
         <command>urxvt</command>
@@ -330,16 +334,18 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-e">
+<!-- Office -->
+    <keybind key="W-o">
       <action name="Execute">
-        <command>geany</command>
+        <command>libreoffice</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>Leafpad</name>
+          <name>Libreoffice</name>
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-f">
+<!-- File Manager -->
+    <keybind key="W-e">
       <action name="Execute">
         <command>thunar</command>
         <startupnotify>
@@ -348,6 +354,7 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
+<!-- Taskmanager -->
     <keybind key="W-q">
       <action name="Execute">
         <command>xkill</command>
@@ -357,24 +364,17 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-v">
-      <action name="ToggleMaximizeVert"/>
-    </keybind>
-    <keybind key="W-r">
-      <action name="Execute">
-        <command>update_doc</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>DOC</name>
-        </startupnotify>
-      </action>
-    </keybind>
+<!-- Show Menu -->
     <keybind key="W-space">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-a">
+<!-- Sceen Toggle -->
+<!--     <keybind key="W-f">
+      <action name="ToggleMaximizeVert"/>
+    </keybind> -->
+    <keybind key="W-f">
       <action name="ToggleMaximizeFull"/>
     </keybind>
     <keybind key="W-Right">
@@ -407,6 +407,7 @@ cases. -->
     <keybind key="W-c">
       <action name="MoveToCenter"/>
     </keybind>
+<!-- Audio Keybind -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>amixer -c 1 set Master 3+</command>
@@ -422,6 +423,21 @@ cases. -->
         <command>amixer -c 1 set Master toggle</command>
       </action>
     </keybind>
+<!-- System -->
+<!-- Screenshot -->
+    <keybind key="Print">
+      <action name="Execute">
+        <command>sh -c "import -window root ~/Pictures/Screenshot/$(date '+%d%m%Y-Skrinsut-%M%S').png"</command>
+      </action>
+    </keybind>
+    <keybind key="C-Print">
+      <action name="Execute">
+        <command>gnome-screenshot -a -f</command>
+      </action>
+    </keybind>
+    <keybind key="A-F4">
+      <action name="Close"/>
+    </keybind>
     <keybind key="XF86ScreenSaver">
       <action name="Execute">
         <command>slock</command>
@@ -430,6 +446,16 @@ cases. -->
     <keybind key="XF86Sleep">
       <action name="Execute">
         <command>sudo pm-suspend</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-r">
+      <action name="Execute">
+        <command>openbox --reconfigure</command>
+      </action>
+    </keybind>
+    <keybind key="XF86PowerOff">
+      <action name="Execute">
+        <command>systemctl poweroff</command>
       </action>
     </keybind>
   </keyboard>
