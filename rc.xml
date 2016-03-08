@@ -344,6 +344,16 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
+<!-- Text Editor -->
+    <keybind key="W-s">
+      <action name="Execute">
+        <command>subl3</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>Sublime 3</name>
+        </startupnotify>
+      </action>
+    </keybind>
 <!-- File Manager -->
     <keybind key="W-e">
       <action name="Execute">
